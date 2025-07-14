@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+
+<meta name="author" content="Your Name">
+<meta name="description" content="This page includes content assisted by AI tools.">
+</head>
+ <body>
+  <form name="contact" method="get" action="success.html">
+   <fieldset>
+     <legend><b>Contact Us</b></legend>
+
+       <label for="name">Name:</label>
+       <input type="text" id="name" name="name" required><br>
+
+       <label for ="phone">Phone:</label>
+       <input type="tel" id="phone" name="phone" required><br>
+
+       <label for="email">Email:</label>
+       <input type="email" id="email" name="email" required><br>
+
+
+       <label for="message">Message:</label>
+       <textarea id="message" name="message" rows="4" required></textarea>
+
+    <p><b>Interests:</b></p>
+    <label>
+      
+      Web Development
+      <input type="checkbox" id="interest1" name="interests" value="webDevelopment">
+    </label>
+
+    <label>
+      AI Tools
+      <input type="checkbox" id="interest2" name="interests" value="aiTools">
+    </label>
+    
+    <label>
+      Data Science
+       <input type="checkbox" id="interest3" name="interests" value="dataScience">
+    </label>
+     <label for="referral"><b>How did you hear about us?</label>
+     <select id="referral" name="referral">
+        <option value="searchEngine">Search Engine</option>
+        <option value="socialMedia">Social Media</option>
+        <option value="friend">Friend</option>
+        <option value="other">Other</option>
+     </select><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+   </fieldset>
+  </form>
+ </body>
+</html>

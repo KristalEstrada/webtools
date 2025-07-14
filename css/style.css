@@ -60,3 +60,71 @@ footer {
     font-style: italic;
     color: #dc4d92;
 }
+
+form {
+  width: 65%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 2px solid #d90d84;
+  border-radius: 20px;
+  font-family: Arial, sans-serif;
+}
+fieldset {
+  border: 2px solid #e48ecf;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: #fff0f7;
+}
+
+legend {
+  font-size: 1.5rem;
+  color: #b00075;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+label {
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+  color: #4a004d;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 16px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  background-color: #e48ecf;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  background-color: #c2188b;
+}
+.confirmation {
+  max-width: 60%;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #fdfdfd;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+
