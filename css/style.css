@@ -16,10 +16,13 @@ h1 {
 
 header, footer {
     background-color: #eacbf0;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
 }
-
+nav a {
+  font-size: x-large;
+  font-weight: bold;
+}
 nav ul {
     list-style: none;
     padding: 0;
