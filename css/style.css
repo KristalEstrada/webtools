@@ -35,16 +35,16 @@ nav li {
 }
 
 a:link {
-    color: #ed07bb;
+    color: #040404;
     text-decoration: none;
 }
 
 a:visited {
-    color: #4a148c;
+    color: #f507c9;
 }
 
 a:hover {
-    color: #ba68c8;
+    color: #ffffff;
     text-decoration: underline;
 }
 h1, h2 {
