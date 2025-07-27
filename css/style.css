@@ -169,32 +169,6 @@ nav {
   display: inline-block;
 }
 
-}
-.topnav {
-  background-color: #ffffff; 
-  padding: 10px 20px; 
-  display: flex;
-  gap: 20px;
-  align-items: center;
-
-.topnav a {
-  text-decoration: none;
-  color: #333;
-  padding: 10px 15px;   
-  display: inline-block; x
-  margin-right: 15px;    
-  font-weight: bold;
-}
-
-.topnav a:last-child {
-  margin-right: 0;
-}
-
-.topnav a:hover {
-  background-color: #0a0a0a;
-  border-radius: 4px;
-}
-
 .site-logo {
   position: absolute;
   top: 10px;
@@ -202,4 +176,25 @@ nav {
   width: 80px; /* adjust size */
   height: auto;
   z-index: 1000; /* so it stays on top */
+}
+.topnav {
+  background-color: #ffffff; 
+  padding: 10px 20px; 
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;   
+  display: inline-block;    
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  border-radius: 4px;
 }
