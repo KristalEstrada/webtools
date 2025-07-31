@@ -1,120 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <header>
-  <img src="images/logo.jpg" alt="Site Logo" class="site-logo">
-  <h1>Welcome!</h1>
-</header>
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="css/style.css">
-
-<meta name="author" content="Your Name">
-<meta name="description" content="This page includes content assisted by AI tools.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This page includes content assisted by AI tools." />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/layout.css" />
 </head>
- <body>
-   <nav class="topnav">
+<body>
+  <nav class="topnav">
     <a href="index.html">Home</a>
     <a class="active" href="contact-us.html">Contact Us</a>
     <a href="team.html">Meet the Team</a>
     <a href="products.html">Our Products</a>
   </nav>
+  <header>
+      <img src="images/logo.jpg" alt="Site Logo" class="site-logo">
+              <h1>Contact Us</h1>
+        <p><b>We would love to hear from you! Please fill out the form below or contact our team directly.</b></p> 
+      </header>
+<main>
+  <aside class="to>
 
-  <form name="contact" method="get" action="success.html">
-   <fieldset>
-     <legend><b>Contact Us</b></legend>
+  <main class="page-container">
+      </aside>
+    <section>
+      <form name="contact" method="get" action="success.html">
+        <fieldset>
+          <legend><b>Contact Us</b></legend>
 
-       <label for="name">Name:</label>
-       <input type="text" id="name" name="name" required><br>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br />
 
-       <label for ="phone">Phone:</label>
-       <input type="tel" id="phone" name="phone" required><br>
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required /><br />
 
-       <label for="email">Email:</label>
-       <input type="email" id="email" name="email" required><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br />
 
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
 
-       <label for="message">Message:</label>
-       <textarea id="message" name="message" rows="4" required></textarea>
+          <p><b>Interests:</b></p>
+          <label>
+            Web Development
+            <input type="checkbox" name="interests" value="webDevelopment" />
+          </label>
+          <label>
+            AI Tools
+            <input type="checkbox" name="interests" value="aiTools" />
+          </label>
+          <label>
+            Data Science
+            <input type="checkbox" name="interests" value="dataScience" />
+          </label>
 
-    <p><b>Interests:</b></p>
-    <label>
-      
-      Web Development
-      <input type="checkbox" id="interest1" name="interests" value="webDevelopment">
-    </label>
+          <p>How did you hear about us?</p>
+          <label><input type="radio" name="referral" value="friend" /> Friend</label><br />
+          <label><input type="radio" name="referral" value="social" /> Social Media</label><br />
+          <label><input type="radio" name="referral" value="search" /> Search Engine</label><br />
+          <label><input type="radio" name="referral" value="other" /> Other</label><br />
 
-    <label>
-      AI Tools
-      <input type="checkbox" id="interest2" name="interests" value="aiTools">
-    </label>
-    
-    <label>
-      Data Science
-       <input type="checkbox" id="interest3" name="interests" value="dataScience">
-    </label>
-     <p>How did you hear about us?</p>
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </fieldset>
+      </form>
+    </section>
 
-<label>
-  <input type="radio" name="referral" value="friend"> Friend
-</label><br>
+    <section id="team-contacts">
+      <h2>Team Contact Sheet</h2>
+      <table>
+        <caption>Contact details for our web development team</caption>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Role</th>
+            <th scope="col">Email</th>
+            <th scope="col">Support Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kristal Estrada</td>
+            <td>Lead Developer</td>
+            <td>kristal@example.com</td>
+            <td>9am - 5pm</td>
+          </tr>
+          <tr>
+            <td>Alex Johnson</td>
+            <td>UI/UX Designer</td>
+            <td>alex@example.com</td>
+            <td>10am - 6pm</td>
+          </tr>
+          <tr>
+            <td>Maria Lopez</td>
+            <td>Project Manager</td>
+            <td>maria@example.com</td>
+            <td>8am - 4pm</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
 
-<label>
-  <input type="radio" name="referral" value="social"> Social Media
-</label><br>
+  <footer class="container">
+    <div class="column">
+      <h4>External Links</h4>
+      <ul>
+        <li><a href="https://www.dallascollege.edu" target="_blank" rel="noopener">Dallas College</a></li>
+        <li><a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a></li>
+        <li><a href="https://www.microsoft.com/ai" target="_blank" rel="noopener">Microsoft AI</a></li>
+      </ul>
+    </div>
 
-<label>
-  <input type="radio" name="referral" value="search"> Search Engine
-</label><br>
+    <div class="column">
+      <p>&copy; 2025 | <a href="mailto:webmaster@example.com">Email Webmaster</a></p>
+    </div>
 
-<label>
-  <input type="radio" name="referral" value="other"> Other
-</label>
-
-     </select><br>
-
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
-
-   </fieldset>
-  </form>
-  
-  <section id="team-contacts">
-  <h2>Team Contact Sheet</h2>
-  <table>
-    <caption>Contact details for our web development team</caption>
-    <thead>
-      <tr>
-        <th scope="col">Name</th>
-        <th scope="col">Role</th>
-        <th scope="col">Email</th>
-        <th scope="col">Support Hours</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Kristal Estrada</td>
-        <td>Lead Developer</td>
-        <td>kristal@example.com</td>
-        <td>9am - 5pm</td>
-      </tr>
-      <tr>
-        <td>Alex Johnson</td>
-        <td>UI/UX Designer</td>
-        <td>alex@example.com</td>
-        <td>10am - 6pm</td>
-      </tr>
-      <tr>
-        <td>Maria Lopez</td>
-        <td>Project Manager</td>
-        <td>maria@example.com</td>
-        <td>8am - 4pm</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
-
- </body>
+    <div class="column">
+      <h4>Site Navigation</h4>
+      <ul>
+        <li><a href="#mybackground">My Background</a></li>
+        <li><a href="#identity">My Identity</a></li>
+        <li><a href="#journey">My Web Development Journey</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+        <li><a href="team.html">Meet the Team</a></li>
+        <li><a href="products.html">Our Products</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
 </html>

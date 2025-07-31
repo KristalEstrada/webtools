@@ -1,54 +1,57 @@
-
 body {
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    background-color: #f7c7e5;
-    color: #0c0c0c;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  background-color: #f7c7e5;
+  color: #0c0c0c;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 20px;
 }
+
 h1 {
-    text-align: center;
-    font-size: 4rem;
-    color: #6a1b9a;
-    margin-top: 30px;
+  text-align: center;
+  font-size: 4rem;
+  color: #6a1b9a;
+  margin-top: 30px;
+}
+
+h1, h2 {
+  color: #030303;
 }
 
 header, footer {
-    background-color: #fa06a139;
-    padding: 20px;
-    text-align: center;
+  background-color: #fa06a139;
+  padding: 20px;
+  text-align: center;
 }
+
 a:link {
-    color: #040404;
-    text-decoration: none;
+  color: #040404;
+  text-decoration: none;
 }
 
 a:visited {
-    color: #f507c9;
+  color: #f507c9;
 }
 
 a:hover {
-    color: #040404;
-    text-decoration: underline;
-}
-h1, h2 {
-    color: #030303;
+  color: #040404;
+  text-decoration: underline;
 }
 
 section {
-    margin: 30px 0;
-    padding: 20px;
-    background-color: #fafafa;
-    border-left: 5px solid #6a1b9a;
-    border-radius: 5px;
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #fafafa;
+  border-left: 5px solid #6a1b9a;
+  border-radius: 5px;
 }
 
 footer {
-    font-style: italic;
-    color: #030303;
+  font-style: italic;
+  color: #030303;
 }
 
+/* Forms */
 form {
   width: 65%;
   margin: 40px auto;
@@ -58,6 +61,7 @@ form {
   border-radius: 20px;
   font-family: Arial, sans-serif;
 }
+
 fieldset {
   border: 2px solid #e48ecf;
   padding: 25px;
@@ -106,6 +110,8 @@ input[type="reset"]:hover,
 input[type="button"]:hover {
   background-color: #c2188b;
 }
+
+/* Confirmation message */
 .confirmation {
   max-width: 60%;
   margin: 50px auto;
@@ -116,6 +122,7 @@ input[type="button"]:hover {
   text-align: center;
 }
 
+/* Team cards */
 .team {
   display: flex;
   flex-wrap: wrap;
@@ -133,14 +140,17 @@ input[type="button"]:hover {
   border-radius: 10px;
   text-align: center;
 }
+
 .team-member img {
   width: 100%;
- max-width: 180px;
+  max-width: 180px;
   height: auto;
   border-radius: 50%;
   margin: 0 auto;
   display: block;
 }
+
+/* Navigation colors and links */
 nav {
   display: flex;
   justify-content: center; 
@@ -160,6 +170,7 @@ nav {
 .nav-left li {
   margin-right: 15px;
 }
+
 .signin-button {
   background-color: #e48ecf;
   color: white;
@@ -173,28 +184,40 @@ nav {
   position: absolute;
   top: 10px;
   left: 10px;
-  width: 80px; /* adjust size */
+  width: 80px;
   height: auto;
-  z-index: 1000; /* so it stays on top */
+  z-index: 1000;
 }
+
+/* Topnav styles */
 .topnav {
-  background-color: #ffffff; 
-  padding: 10px 20px; 
+  background-color: #b00075;
+  overflow: hidden;
   display: flex;
+  justify-content: center;
+  padding: 10px 0;
   gap: 20px;
   align-items: center;
 }
 
 .topnav a {
+  color: white;
+  text-align: center;
+  padding: 12px 16px;
   text-decoration: none;
-  color: #333;
-  padding: 10px 15px;   
-  display: inline-block;    
+  font-size: 1.1rem;
   font-weight: bold;
+  display: inline-block;
 }
 
 .topnav a:hover {
-  background-color: #0a0a0a;
-  color: #ffffff;
+  background-color: #f1f1f1;
+  color: #b00075;
   border-radius: 4px;
+}
+
+.topnav a.active {
+  background-color: #ffffff;
+  color: #b00075;
+  font-weight: bold;
 }
