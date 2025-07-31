@@ -51,7 +51,6 @@ footer {
   color: #030303;
 }
 
-/* Forms */
 form {
   width: 65%;
   margin: 40px auto;
@@ -220,4 +219,18 @@ nav {
   background-color: #ffffff;
   color: #b00075;
   font-weight: bold;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  margin-left: 6px;
+  margin-right: 0;
+  vertical-align: middle;
+}
+
+label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 5px 0;
+  flex-direction: row-reverse;
 }
