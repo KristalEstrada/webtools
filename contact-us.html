@@ -1,88 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="This page includes content assisted by AI tools.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This page includes content assisted by AI tools." />
   <title>Contact Us</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 </head>
 <body>
-  <nav class="topnav">
-    <a href="index.html">Home</a>
-    <a class="active" href="contact-us.html">Contact Us</a>
-    <a href="team.html">Meet the Team</a>
-    <a href="products.html">Our Products</a>
+  <nav class="topnav w3-bar w3-theme-dark">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a class="w3-bar-item w3-button w3-light-grey" href="contact-us.html">Contact Us</a>
+    <a href="team.html" class="w3-bar-item w3-button">Meet the Team</a>
+    <a href="products.html" class="w3-bar-item w3-button">Our Products</a>
+    <a href="about.html" class="w3-bar-item w3-button">About Us</a>
   </nav>
-  <header>
-      <img src="images/logo.jpg" alt="Site Logo" class="site-logo">
-              <h1>Contact Us</h1>
-        <p><b>We would love to hear from you! Please fill out the form below or contact our team directly.</b></p> 
-      </header>
-<main>
-  <aside class="to>
 
-  <main class="page-container">
-      </aside>
+  <header class="w3-container w3-padding-16 w3-center">
+    <img src="images/logo.jpg" alt="Site Logo" class="site-logo" />
+    <h1>Contact Us</h1>
+    <p><b>We would love to hear from you! Please fill out the form below or contact our team directly.</b></p>
+  </header>
+
+  <main class="w3-content w3-padding" style="max-width:1200px">
     <section>
-      <form name="contact" method="get" action="success.html">
+      <form name="contact" method="get" action="success.html" class="w3-container w3-card w3-padding w3-white">
         <fieldset>
           <legend><b>Contact Us</b></legend>
 
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required /><br />
+          <input class="w3-input w3-border" type="text" id="name" name="name" required />
 
           <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone" required /><br />
+          <input class="w3-input w3-border" type="tel" id="phone" name="phone" required />
 
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required /><br />
+          <input class="w3-input w3-border" type="email" id="email" name="email" required />
 
           <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
+          <textarea class="w3-input w3-border" id="message" name="message" rows="4" required></textarea>
 
           <p><b>Interests:</b></p>
-          <label>
+          <label class="w3-checkbox">
             <input type="checkbox" name="interests" value="webDevelopment" />
-            Web Development
+            <span>Web Development</span>
           </label>
-          <label>
+          <label class="w3-checkbox">
             <input type="checkbox" name="interests" value="aiTools" />
-            AI Tools
+            <span>AI Tools</span>
           </label>
-          <label>
+          <label class="w3-checkbox">
             <input type="checkbox" name="interests" value="dataScience" />
-            Data Science
+            <span>Data Science</span>
           </label>
 
           <p><b>How did you Hear about us?</b></p>
-<label>
-  <input type="radio" name="referral" value="friend" />
-  Friend
-</label>
-<label>
-  <input type="radio" name="referral" value="social" />
-  Social Media
-</label>
-<label>
-  <input type="radio" name="referral" value="search" />
-  Search Engine
-</label>
-<label>
-  <input type="radio" name="referral" value="other" />
-  Other
-</label>
+          <label class="w3-radio">
+            <input type="radio" name="referral" value="friend" />
+            <span>Friend</span>
+          </label>
+          <label class="w3-radio">
+            <input type="radio" name="referral" value="social" />
+            <span>Social Media</span>
+          </label>
+          <label class="w3-radio">
+            <input type="radio" name="referral" value="search" />
+            <span>Search Engine</span>
+          </label>
+          <label class="w3-radio">
+            <input type="radio" name="referral" value="other" />
+            <span>Other</span>
+          </label>
 
-          <input type="submit" value="Submit" />
-          <input type="reset" value="Reset" />
+            <div style="text-align:center; margin-top:20px;">
+              <input class="w3-button w3-blue w3-margin-top" type="submit" value="Submit" style="margin-right:10px;" />
+              <input class="w3-button w3-red w3-margin-top" type="reset" value="Reset" />
+            </div>
         </fieldset>
       </form>
     </section>
 
-    <section id="team-contacts">
+    <section id="team-contacts" class="w3-margin-top">
       <h2>Team Contact Sheet</h2>
-      <table>
+      <table class="w3-table-all w3-hoverable w3-centered">
         <caption>Contact details for our web development team</caption>
         <thead>
           <tr>
@@ -116,27 +119,30 @@
     </section>
   </main>
 
-  <footer class="container">
-    <div class="column">
-      <h3>External Links</h3>
-      <ul>
-        <li><a href="https://www.dallascollege.edu" target="_blank" rel="noopener">Dallas College</a></li>
-        <li><a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a></li>
-        <li><a href="https://www.microsoft.com/ai" target="_blank" rel="noopener">Microsoft AI</a></li>
-      </ul>
-    </div>
+  <footer class="w3-container w3-theme-dark w3-padding-16 w3-margin-top">
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>External Links</h3>
+        <ul class="w3-ul">
+          <li><a href="https://www.dallascollege.edu" target="_blank" rel="noopener">Dallas College</a></li>
+          <li><a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a></li>
+          <li><a href="https://www.microsoft.com/ai" target="_blank" rel="noopener">Microsoft AI</a></li>
+        </ul>
+      </div>
 
-    <div class="column">
-      <p>&copy; 2025 | <a href="mailto:webmaster@example.com">Email Webmaster</a></p>
-    </div>
+      <div class="w3-third w3-center">
+        <p>&copy; 2025 | <a href="mailto:webmaster@example.com">Email Webmaster</a></p>
+      </div>
 
-    <div class="column">
-      <h3>Site Navigation</h3>
-      <ul>
-        <li><a href="contact-us.html">Contact Us</a></li>
-        <li><a href="team.html">Meet the Team</a></li>
-        <li><a href="products.html">Our Products</a></li>
-      </ul>
+      <div class="w3-third">
+        <h3>Site Navigation</h3>
+        <ul class="w3-ul">
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="team.html">Meet the Team</a></li>
+          <li><a href="products.html">Our Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
     </div>
   </footer>
 </body>
