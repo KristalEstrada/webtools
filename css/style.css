@@ -234,3 +234,7 @@ label {
   margin: 5px 0;
   flex-direction: row-reverse;
 }
+.accessible-pink {
+  background-color: #AD1457;
+  color: white;
+}
